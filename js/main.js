@@ -15,7 +15,7 @@ if (registerPage) {
         const cPasswordError = document.querySelector('.cPassword-error')
         const formError = document.querySelector('.form-error')
         const usernameRegex = /^[^0-9][a-zA-Z0-9]{3,13}[^0-9]$/
-        const emailRegex = /^[a-zA-Z0-9.!#$%&'*+\=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+        const emailRegex = /^[a-zA-Z0-9.!#$%&'*+\=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+$/
         const passwordRegex = /^(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[A-Z])[a-zA-Z0-9!@#$%^&*]{8,}$/
         let username, email, password, password_confirmation;
 
@@ -88,7 +88,7 @@ if (registerPage) {
                         passwordError.textContent = res.errors.password[0]
                     }else{
                         localStorage.setItem('userInfo', JSON.stringify(res))
-                        window.location.replace(`${window.location.protocol}/successed.html`)
+                        window.location.replace(`${window.location.origin}/successed.html`)
                     }
                     
                 })
