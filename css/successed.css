@@ -1,0 +1,33 @@
+.successed-page{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image{
+    background-image: url('../images/03450.jpg');
+    height: 456px;
+}
+
+.content-container h1{
+    font-size: 42px;
+}
+
+@media screen and (max-width: 640px){
+    .content-container{
+        gap: 120px;
+    }
+
+    .image{
+        background-image: url('../images/03315.jpg');
+        height: 315px;
+        width: 322px;
+    }
+
+    .content-container h1{
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+}

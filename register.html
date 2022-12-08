@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/register.css" />
+    <title>Register</title>
+</head>
+<body>
+    <main class="register-page">
+        <div class="container">
+            <div class="content-container">
+                <div class="image"></div>
+                <div class="content">
+                    <h1>Create Account</h1>
+                    <p>Go ahead and sign up, let everyone know how awesome you are!</p>
+                    <form class="user-form">
+                        <div class="form-row">
+                            <div class="user-input">
+                                <div class="icon">
+                                    <img src="images/User.svg" alt="user">
+                                    <span class="divider"></span>
+                                </div>
+                                <div class="input">
+                                    <input type="text" placeholder="Username" name="username" class="username-input">
+                                </div>
+                            </div>
+                            <span class="username-error error"></span>
+                        </div>
+                        <div class="form-row">
+                            <div class="user-input">
+                                <div class="icon">
+                                    <img src="images/EnvelopeSimple.svg" alt="email">
+                                    <span class="divider"></span>
+                                </div>
+                                <div class="input">
+                                    <input type="email" placeholder="Email" name="email" class="email-input">
+                                </div>
+                            </div>
+                            <span class="email-error error"></span>
+                        </div>
+                        <div class="form-row">
+                            <div class="user-input">
+                                <div class="icon">
+                                    <img src="images/LockKey.svg" alt="lock">
+                                    <span class="divider"></span>
+                                </div>
+                                <div class="input">
+                                    <input type="password" placeholder="Password" name="password" class="password-input">
+                                </div>
+                            </div>
+                            <span class="password-error error"></span>
+                        </div>
+                        <div class="form-row">
+                            <div class="user-input">
+                                <div class="icon">
+                                    <img src="images/LockKey.svg" alt="lock">
+                                    <span class="divider"></span>
+                                </div>
+                                <div class="input">
+                                    <input type="password" placeholder="Confirm password" name="password_confirmation" class="cPassword-input">
+                                </div>
+                            </div>
+                            <span class="cPassword-error error"></span>
+                        </div>
+                        <button type="submit" class="form-btn">Create Account</button>
+                        <span class="form-error error"></span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

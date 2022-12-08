@@ -1,0 +1,23 @@
+.home-page{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image{
+    background-image: url('../images/01450.jpg');
+}
+
+.content-container h1{
+    font-size: 56px;
+}
+
+
+
+@media screen and (max-width: 640px){
+    .image{
+        background-image: url('../images/01315.jpg');
+    }
+}
