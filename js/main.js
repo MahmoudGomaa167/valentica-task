@@ -88,7 +88,7 @@ if (registerPage) {
                         passwordError.textContent = res.errors.password[0]
                     }else{
                         localStorage.setItem('userInfo', JSON.stringify(res))
-                        window.location.href = 'successed.html'
+                        window.location.replace(`${window.location.origin}${window.location.pathname}/successed.html`)
                     }
                 })
             }
