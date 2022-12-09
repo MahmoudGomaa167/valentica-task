@@ -88,7 +88,8 @@ if (registerPage) {
                         passwordError.textContent = res.errors.password[0]
                     }else{
                         localStorage.setItem('userInfo', JSON.stringify(res))
-                        window.location.href = '/successed.html'
+                        const url = new URL('', 'https://mahmoudgomaa167.github.io/valentica-task/')
+                        window.location.replace(`${url}successed.html`)
                     }
                 })
             }
